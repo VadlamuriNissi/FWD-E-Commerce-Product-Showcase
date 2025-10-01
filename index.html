@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-commerce product showcase</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar">
+      <strong></h2><div class="logo">Bazaar🛍️ </div></strong>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#Categories.html">Categories</a></li>
+        <li><a href="#About">About</a></li>
+        <li><a href="#Contact">Contact</a></li>
+      </ul>
+      <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+    </nav>
+    <div class="cart-icon" onclick="toggleCart()"></div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1><span>Discover Authentic India</span></h1>
+      <p>Premium handcrafted products from the heart of India. Experience tradition, quality, and culture in every purchase.</p>
+      <a href="#projects" class="btn">Explore Collection</a>
+    </div>
+  </section>
+
+  <!-- Categories Section -->
+    <section class="categories" id="categories">
+        <div class="container">
+            <h2 class="section-title">Shop by Categories</h2>
+            <div class="category-grid">
+                <div class="category-card" onclick="filterProducts('textiles')">
+                    <span class="category-icon">🧵</span>
+                    <h3>Textiles & Fabrics</h3>
+                    <p>Handwoven sarees, silk fabrics, and traditional clothing</p>
+                </div>
+                <div class="category-card" onclick="filterProducts('jewelry')">
+                    <span class="category-icon">💍</span>
+                    <h3>Jewelry & Accessories</h3>
+                    <p>Elegant kundan, temple jewelry, and traditional ornaments</p>
+                </div>
+                <div class="category-card" onclick="filterProducts('handicrafts')">
+                    <span class="category-icon">🎨</span>
+                    <h3>Handicrafts</h3>
+                    <p>Beautiful pottery, wood carvings, and artisan creations</p>
+                </div>
+                <div class="category-card" onclick="filterProducts('spices')">
+                    <span class="category-icon">🌶️</span>
+                    <h3>Spices & Food</h3>
+                    <p>Authentic Indian spices, teas, and gourmet delicacies</p>
+                </div>
+                <div class="category-card" onclick="filterProducts('home')">
+                    <span class="category-icon">🏠</span>
+                    <h3>Home Decor</h3>
+                    <p>Traditional lamps, brass items, and decorative pieces</p>
+                </div>
+                <div class="category-card" onclick="filterProducts('wellness')">
+                    <span class="category-icon">🧘</span>
+                    <h3>Wellness & Ayurveda</h3>
+                    <p>Natural skincare, herbal remedies, and yoga essentials</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bharat Bazaar Footer</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <!-- About -->
+      <div class="footer-section about">
+        <h3>About Bazaar </h3>
+        <p>
+          We are passionate about bringing authentic Indian products to customers worldwide. 
+          
+        </p>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="footer-section contact">
+        <h3>Contact Info</h3>
+        <p><i class="fas fa-map-marker-alt"></i> Visakhapatnam , Andhrapradesh , India</p>
+        <p><i class="fas fa-phone-alt"></i> +91 98765 43210</p>
+        <p><i class="fas fa-envelope"></i> hello@bazaar.com</p>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="footer-section links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Categories</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2025 Bazaar. Made with <span class="heart">❤️</span> in India</p>
+    </div>
+  </footer>
+</body>
+</html>

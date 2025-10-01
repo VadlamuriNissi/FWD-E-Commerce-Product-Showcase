@@ -1,0 +1,341 @@
+/* General Styles */
+.logo{font-size: 30px;
+      padding:20px 
+      
+}
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  scroll-behavior: smooth;
+}
+
+header {
+  background: #333;
+  color: rgb(255, 255, 255);
+  padding: 10px 20px;
+  line-height: 1;
+  font-weight: 400;
+  display: flex;
+  justify-content:space-between;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin: 0 10px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+
+
+
+.cart-icon {
+            position: relative;
+            font-size: 1.5rem;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .cart-icon:hover {
+            transform: scale(1.1);
+        }
+
+        .cart-count {
+            position: absolute;
+            top: -8px;
+            right: -8px;
+            background: #ff1744;
+            color: white;
+            border-radius: 50%;
+            width: 20px;
+            height: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.8rem;
+            font-weight: bold;
+        }
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(to right, #3b79ae, #2a2980);
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.hero h1 span {
+  color: rgb(63, 189, 189);
+}
+
+.btn {
+  background: white;
+  color: #333;
+  padding: 10px 20px;
+  text-decoration: none;
+  margin-top: 20px;
+  display: inline-block;
+  border-radius: 5px;
+}
+
+/* About Section */
+.about {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.about-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-content img {
+  max-width: 150px;
+  border-radius: 50%;
+  margin: 20px;
+}
+
+
+
+.category-card:hover {
+  transform: scale(1.05);
+}
+
+/* Contact Section */
+.contact {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+form {
+  max-width: 400px;
+  margin: auto;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+button {
+  background: #4facfe;
+  color: white;
+  border: none;
+  padding: 10px;
+  width: 100%;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #00c6ff;
+}
+
+/* Categories Section */
+        .categories {
+            padding: 4rem 0;
+            background: white;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            color: #c35d43;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 3px;
+            background: linear-gradient(90deg, #d56238, #f7931e);
+            border-radius: 3px;
+        }
+
+        .category-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .category-card {
+            background: linear-gradient(135deg, #fff 0%, #f8f9fa 100%);
+            border-radius: 20px;
+            padding: 2rem;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            cursor: pointer;
+            border: 2px solid transparent;
+        }
+
+        .category-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+            border-color: #ff6b35;
+        }
+
+        .category-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            display: block;
+        }
+
+        .category-card h3 {
+            color: #ff6b35;
+            margin-bottom: 0.5rem;
+            font-size: 1.3rem;
+        }
+
+/* Reset & base styles */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #bbb6ab;
+}
+
+.footer {
+  background-color: #cecfdd;
+  color: #fff;
+  padding: 40px 20px 20px;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 40px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Section Titles */
+.footer-section h3 {
+  color: #3e330c;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+/* About Section */
+.footer-section.about {
+  max-width: 300px;
+  text-align: center;
+}
+
+.footer-section.about p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #08080a;
+}
+
+/* Social Icons */
+.social-icons a {
+  margin: 10px 8px 0;
+  font-size: 20px;
+  color: white;
+  background-color: #a48b30;
+  padding: 12px;
+  border-radius: 50%;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.social-icons a:hover {
+  background-color: #e65100;
+}
+
+/* Contact Section */
+.footer-section.contact p {
+  font-size: 16px;
+  margin: 10px 0;
+  color: #1b1b21;
+}
+
+.footer-section.contact i {
+  margin-right: 8px;
+  color: #ffb234;
+}
+
+/* Quick Links */
+.footer-section.links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section.links li {
+  margin: 12px 0;
+}
+
+.footer-section.links a {
+  color: #2f0541;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.footer-section.links a:hover {
+  text-decoration: underline;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  margin-top: 30px;
+  padding-top: 15px;
+  text-align: center;
+  color: #01011a;
+  font-size: 15px;
+}
+
+.heart {
+  color: red;
+}
+
+
+/* Responsive Navbar */
+@media screen and (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background: #333;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 200px;
+  }
+  
+  .nav-links.show {
+    display: flex;
+  }
+  
+  .menu-toggle {
+    display: block;
+  }
+}
