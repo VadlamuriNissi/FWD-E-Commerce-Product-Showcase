@@ -25,4 +25,14 @@ contactForm.addEventListener("submit", (e) => {
     formStatus.textContent = "❌ Please fill in all fields.";
     formStatus.style.color = "red";
   }
+
 });
+
+const cart = document.
+getElementById("cart");
+document.getElementById("btn").
+onclick = function add_item()
+{
+  const item =cart.innerText;
+  cart.innerText=parseInt(item,10)+1;
+}
