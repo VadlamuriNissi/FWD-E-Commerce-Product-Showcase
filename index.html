@@ -22,6 +22,17 @@
       <div class="menu-toggle" id="menu-toggle">&#9776;</div>
     </nav>
     <div class="cart-icon" onclick="toggleCart()"></div>
+    <div class="cart-summary" onclick="openCart()">
+                <div class="cart-icon">
+                    🛒
+                    <span class="cart-count" id="cartCount">0</span>
+                </div>
+                <div>
+                    <div style="font-size: 0.9em;">Total</div>
+                    <div style="font-weight: bold; font-size: 1.2em;" id="cartTotal">$0.00</div>
+                </div>
+            </div>
+    
   </header>
 
   <!-- Hero Section -->
@@ -42,31 +53,37 @@
                     <span class="category-icon">🧵</span>
                     <h3>Textiles & Fabrics</h3>
                     <p>Handwoven sarees, silk fabrics, and traditional clothing</p>
+                    <button type="submit"id="btn"class="add-to-cart">Add to cart</button>
                 </div>
                 <div class="category-card" onclick="filterProducts('jewelry')">
                     <span class="category-icon">💍</span>
                     <h3>Jewelry & Accessories</h3>
                     <p>Elegant kundan, temple jewelry, and traditional ornaments</p>
+                    <button type="submit"id="btn"class="add-to-cart">Add to cart</button>
                 </div>
                 <div class="category-card" onclick="filterProducts('handicrafts')">
                     <span class="category-icon">🎨</span>
                     <h3>Handicrafts</h3>
                     <p>Beautiful pottery, wood carvings, and artisan creations</p>
+                    <button type="submit"id="btn"class="add-to-cart">Add to cart</button>
                 </div>
                 <div class="category-card" onclick="filterProducts('spices')">
                     <span class="category-icon">🌶️</span>
                     <h3>Spices & Food</h3>
                     <p>Authentic Indian spices, teas, and gourmet delicacies</p>
+                    <button type="submit"id="btn"class="add-to-cart">Add to cart</button>
                 </div>
                 <div class="category-card" onclick="filterProducts('home')">
                     <span class="category-icon">🏠</span>
                     <h3>Home Decor</h3>
                     <p>Traditional lamps, brass items, and decorative pieces</p>
+                    <button type="submit"id="btn"class="add-to-cart">Add to cart</button>
                 </div>
                 <div class="category-card" onclick="filterProducts('wellness')">
                     <span class="category-icon">🧘</span>
                     <h3>Wellness & Ayurveda</h3>
                     <p>Natural skincare, herbal remedies, and yoga essentials</p>
+                    <button type="submit"id="btn"class="add-to-cart">Add to cart</button>
                 </div>
             </div>
         </div>
@@ -123,4 +140,5 @@
     </div>
   </footer>
 </body>
+
 </html>
